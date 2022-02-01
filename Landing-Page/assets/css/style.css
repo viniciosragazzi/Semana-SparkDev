@@ -121,7 +121,7 @@ body #hero #container-page {
   grid-template-areas: "esq dir" "esq dir";
   gap: 18px;
   z-index: 10;
-  padding: 50px;
+  padding: 0px;
   justify-items: center;
 }
 body #hero #container-page .esq {
@@ -257,9 +257,20 @@ body #hero #container-page .dir {
     transition: 0.4s ease-in-out transform;
   }
 }
+@media (min-width: 1440px) {
+  body #hero .esq h1 {
+    font-size: max(2vw, 3rem);
+    line-height: min(6vh, 2.6rem);
+  }
+  body #hero .esq p {
+    font-size: min(3vw, 1.4rem) !important;
+    line-height: min(3vw, 1.8rem);
+  }
+}
 @media (max-width: 768px) {
   body #hero #container-page {
     grid-template-areas: "esq esq" "dir dir";
+    padding: 15px;
   }
   body #hero #container-page .esq, body #hero #container-page .dir {
     width: 100% !important;
