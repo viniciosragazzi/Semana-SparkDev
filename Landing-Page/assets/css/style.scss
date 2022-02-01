@@ -126,15 +126,15 @@ body {
         "esq dir";
       gap: 18px;
       z-index: 10;
-      padding: 0px;
+      padding: 0px 25px;
       justify-items: center;
 
       .esq {
-        width: 40vw;
+        width: 50vw;
         grid-area: esq;
         display: flex;
         flex-direction: column;
-        padding-top: 50px;
+        justify-content: center;
         h3 {
           font-size: min(6vw, 1.5rem);
           color: white;
@@ -163,8 +163,10 @@ body {
       }
       .dir {
         width: 40vw;
-        background-color: rgb(255, 239, 239);
         grid-area: dir;
+        img{
+          width: 100%;
+        }
       }
     }
 
@@ -204,7 +206,7 @@ body {
           padding: 0 15px;
       }
       .hero-top .img {
-        width: max(4vw, 140px);
+        width: max(4vw, 200px);
       }
       .hero-top #openMenu {
         display: flex;
@@ -255,6 +257,9 @@ body {
     @media (max-width: 498px) {
       .hero-top #menu {
         transition: 0.4s ease-in-out transform;
+      }
+      .hero-top .img {
+        width: max(4vw, 200px);
       }
     }
 
