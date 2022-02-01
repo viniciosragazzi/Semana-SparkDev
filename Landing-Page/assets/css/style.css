@@ -114,7 +114,6 @@ body #hero .hero-top #menu .topo-menu_item .topo-menu_link:hover:after {
 }
 body #hero #container-page {
   width: 100%;
-  min-height: 600px;
   display: grid;
   position: absolute;
   top: 100px;
