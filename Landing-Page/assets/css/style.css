@@ -280,6 +280,9 @@ body #hero #container-page .dir {
   body #hero #container-page {
     padding: 20px;
   }
+  body #hero .esq {
+    padding-top: 0 !important;
+  }
   body #hero .esq p {
     font-size: 13px !important;
   }
