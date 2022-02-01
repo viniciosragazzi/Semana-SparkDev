@@ -14,7 +14,7 @@ body {
 }
 body #hero {
   height: 1080px;
-  background-color: #12002b;
+  background-color: #6a05ec;
   transition: ease-in-out 3s animation;
   -webkit-animation: infinite 5s changeColor;
           animation: infinite 5s changeColor;
@@ -43,7 +43,7 @@ body #hero .contact-button {
   font-size: max(1.1vw, 0.7rem);
 }
 body #hero .contact-button:hover {
-  background-color: #772bff;
+  background-color: #341efc;
   border-radius: 3px 13px 3px 13px;
 }
 body #hero .hero-top {
@@ -101,7 +101,7 @@ body #hero .hero-top #menu .topo-menu_item .topo-menu_link.active {
 body #hero .hero-top #menu .topo-menu_item .topo-menu_link:after {
   display: block;
   content: "";
-  border-bottom: solid 3px #772bff;
+  border-bottom: solid 3px #1c43fe;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   margin-top: 5px;
@@ -157,6 +157,7 @@ body #hero #container-page .esq .contact-button {
 body #hero #container-page .dir {
   width: 40vw;
   grid-area: dir;
+  align-items: center;
 }
 body #hero #container-page .dir img {
   width: 100%;
@@ -187,13 +188,20 @@ body #hero #container-page .dir img {
   body #hero .hero-page {
     padding: 50px 30px;
   }
+  body #hero #hero .hero-top {
+    padding-top: 35px;
+  }
+  body #hero .esq h1 {
+    font-size: min(7vw, 3.2rem);
+    line-height: min(6vh, 3.5rem);
+  }
   body #hero .hero-top .img {
     width: max(5vw, 300px);
   }
   body #hero .hero-top #menu .topo-menu_link {
     color: #ffffff;
     text-decoration: none;
-    font-size: min(2.3vw, 1.5rem) !important;
+    font-size: min(1.3vw, 1.5rem) !important;
   }
 }
 @media (max-width: 500px) {
@@ -276,11 +284,25 @@ body #hero #container-page .dir img {
     grid-template-areas: "esq esq" "dir dir";
     padding: 15px;
   }
-  body #hero #container-page .esq, body #hero #container-page .dir {
+  body #hero #container-page .esq,
+body #hero #container-page .dir {
     width: 100% !important;
   }
 }
+@media (max-width: 768px) and (min-width: 425px) {
+  body #hero .esq h1 {
+    line-height: 41px !important;
+  }
+}
+@media (min-width: 729px) and (max-width: 1500px) {
+  body #hero {
+    height: 720px !important;
+  }
+}
 @media (max-width: 425px) {
+  body #hero {
+    height: 880px;
+  }
   body #hero #container-page {
     padding: 20px;
   }
